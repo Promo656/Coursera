@@ -17,6 +17,7 @@
             margin-left: auto;
             margin-top: auto;
             color: white;
+            font-size: 120%;  
         }
 
         #color2 {
@@ -27,6 +28,7 @@
             margin-left: auto;
             margin-top: auto;
             color: black;
+            font-size: 120%;
         }
 
         #color3 {
@@ -37,7 +39,7 @@
             margin-left: auto;
             margin-top: auto;
             color: black;
-
+            font-size: 120%;
         }
 
         .h1 {
