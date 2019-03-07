@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  text-align: center;
+}
+h1{
+  font-weight: bold;
+}
+header{
+  margin-bottom: 30px;
+}
+.menu{
+  background-color: silver;
+  border: 1px solid #000;
+  margin: 0 10px 10px 0;
+}
+.check{
+  text-align: left;
+  padding: 10px;
+}
+#potato{
+  margin-left: 5px;
+}
+#onion{
+  margin-left: 5px;
+}
+#tomato{
+  margin-left: 5px;
+}
+#p{
+  background-color: brown;
+  font-weight: bold;
+  width: 100px;
+  border: 1px solid #000;
+  float: right;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#o{
+  background-color: rgb(172, 67, 145);
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  border: 1px solid #000;
+  float: right;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#t{
+  background-color: #e6e8a0;
+  font-weight: bold;
+  width: 100px;
+  border: 1px solid #000;
+  float: right;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #main{
+    width: 991px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  #potato{
+    float: left;
+    width: 48%;
+  }
+
+  #onion{
+    float: left;
+    width: 48%;
+  }
+  #tomato{
+    clear: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  header{
+    margin-bottom: 150px;
+  }
+  .menu{
+    margin: 0;
+  }
+  main{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0;
+  justify-items: center;
+  width: 100%;
+  }
+  #potato{
+    grid-column: 1;
+    grid-row: 2;
+    width: 97%;
+  }
+  #onion{
+    grid-column: 2;
+    grid-row: 2;
+    width: 97%;
+    }
+  #tomato{
+    grid-column: 3;
+    grid-row: 2;
+    width: 97%;
+  }
+}
